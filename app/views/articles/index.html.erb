@@ -1,0 +1,10 @@
+<div class = "text-center">
+<h1>Wiki on Rails</h1>
+<% @articles.each do |article| %>
+<h3><%= article.name %></h3>
+<p><%= article.content %></p>
+<%= link_to "See article", article_path(article), :class => "btn btn-success"  %>
+<%= link_to "Edit article", article_path(article), method: :patch, :class => "btn btn-primary"  %>
+<%= link_to "Delete article", article_path(article), method: :delete, :class => "btn btn-danger"  %>
+<% end %>
+</div>

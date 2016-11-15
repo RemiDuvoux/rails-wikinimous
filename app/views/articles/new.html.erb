@@ -1,0 +1,12 @@
+<div class="text-center" style="padding: 30px">
+<%= form_for @article do |f| %>
+  <%= f.label :name, "Name" %>
+  <%= f.text_field :name %>
+
+<div class="text-center" style="margin-top: 30px">
+  <%= f.label :content, "Content" %>
+  <%= f.text_area :content, style: "margin: 0px; width: 582px; height: 180px;" %>
+</div>
+  <%= f.submit class: "btn btn-success", style: "margin:30px" %>
+<% end %>
+</div>
